@@ -1,0 +1,26 @@
+name: build-war
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build-job:
+      runs-on: ubuntu-latest
+      steps:
+
+        - uses: action/checkout@v4
+        - uses: action/setup-java@v4
+          with:
+            java-version: "17"
+            distribution: "temurin"
+        - run: 'mvn clean package'
+        - uses: action/upload-artifact@v4
+          with:
+            name: build-hani
+            paths: target/*.war
+          
+
+      
+
+
+
