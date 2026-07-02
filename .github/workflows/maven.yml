@@ -1,4 +1,4 @@
-name: build-war:
+name: build-war
   on:
     push:
       branches: ["main"]
