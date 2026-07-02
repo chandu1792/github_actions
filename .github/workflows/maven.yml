@@ -1,7 +1,7 @@
 name: build-war
-  on:
-    push:
-      branches: ["main"]
+on:
+  push:
+    branches: ["main"]
 
 jobs:
   build:
