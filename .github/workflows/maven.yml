@@ -13,7 +13,7 @@ jobs:
          distribution: temurin
 
       - run: mvn clean package
-      - uses: actions/upload-artifacts@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: saiii
           path: target/*.war
