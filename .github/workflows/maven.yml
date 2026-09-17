@@ -1,6 +1,7 @@
 name: build-war
 on:
-  push: branches: ['main']
+  push: 
+    branches: ["main"]
 jobs:
 build-job:
   runs-on: ubuntu-latest
